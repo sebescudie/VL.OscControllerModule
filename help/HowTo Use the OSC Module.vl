@@ -412,7 +412,7 @@
               <Choice Kind="ProcessAppFlag" Name="OscControllerModule" />
             </p:NodeReference>
             <Pin Id="KXZhwpctJzVNdefEcR4gD7" Name="Model" Kind="InputPin">
-              <p:DefaultValue>
+              <p:DefaultValue r:Type="Spread [Collections]&lt;OscControllerBindingModel [IO]&gt;" xmlns:r="reflection" r:Version="2">
                 <Item Address="/someText" Binding_Type="Receive" Channel_Path="Slogan" />
                 <Item Binding_Type="Receive" Channel_Path="Rockstar" Is_Primitive="True" />
                 <Item Address="/someValue" Binding_Type="Receive" Channel_Path="Noise" />
