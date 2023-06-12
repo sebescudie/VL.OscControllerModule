@@ -2,7 +2,7 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="DJmWjPhctzlN5Bb19x4Ojj" LanguageVersion="2023.5.3-0001-gb649803a1e" Version="0.128">
   <NugetDependency Id="RE8lh3Ho5RvOclEB3qfacn" Location="VL.CoreLib" Version="2023.5.3-0001-gb649803a1e" />
   <Patch Id="MlfQkbBdpknPYuBPp9eSn1">
-    <Canvas Id="MZ2YDkfh1NtQNIfCz5eFOD" DefaultCategory="Main" CanvasType="FullCategory">
+    <Canvas Id="MZ2YDkfh1NtQNIfCz5eFOD" DefaultCategory="IO" CanvasType="FullCategory">
       <!--
 
     ************************ OscControllerModule ************************
@@ -21,8 +21,9 @@
           <Canvas Id="VP29z98FdO9OO8Hu8Ffe0h" CanvasType="Group">
             <ControlPoint Id="Rt9k1QwdsNSL6FJyY8qL4w" Bounds="297,244" />
             <Node Bounds="295,276,106,19" Id="EhPB3K0fIkhPmBiadshnXc">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="IO" NeedsToBeDirectParent="true" />
                 <Choice Kind="ProcessAppFlag" Name="EnsureValidChannel" />
               </p:NodeReference>
               <Pin Id="K9rP4AM83U7NYJsECOfnsp" Name="Input" Kind="InputPin" />
@@ -180,7 +181,7 @@
                   <Pin Id="Qll5bAuRc2yLySWHwiZfkW" Name="Component" Kind="InputPin" />
                 </Node>
                 <Node Bounds="697,991,67,19" Id="AsYIcJzgIEgLkW0Rxc5G7P">
-                  <p:NodeReference LastCategoryFullName="Main.OscControllerBinding" LastDependency="OscControllerModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OscControllerBinding" LastDependency="VL.OscControllerModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="FromModel" />
                   </p:NodeReference>
@@ -251,7 +252,7 @@
                 <Patch Id="GxTJv1eCN0SLSbietyIRoC" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Bowq0VyCEkMMnHIKUcr70g" Name="Update" ManuallySortedPins="true" />
                 <Node Bounds="313,734,94,26" Id="E7nAmGSxbSlPK3xqw8pvHy">
-                  <p:NodeReference LastCategoryFullName="Main.OscControllerModule" LastDependency="OscControllerModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OscControllerModule" LastDependency="VL.OscControllerModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OscControllerModule" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="SyncToModel" />
@@ -263,8 +264,9 @@
               </Patch>
             </Node>
             <Node Bounds="295,362,90,19" Id="TtO5BP0xfJIPP8VApBIicy">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="IO" NeedsToBeDirectParent="true" />
                 <Choice Kind="ProcessAppFlag" Name="SaveToModelPin" />
               </p:NodeReference>
               <Pin Id="IEimyzCKAN2LUZbtxxc3yw" Name="Model Stream" Kind="InputPin" />
@@ -482,7 +484,7 @@
                     <Patch Id="GfBJvi170EOP8Zb9OluQri" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="CaKSN9hiwQFLadujszoc2E" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="575,882,116,19" Id="MmWxea9R6eSPy1K7e53yai">
-                      <p:NodeReference LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+                      <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="UngenericOscReceiver" />
                       </p:NodeReference>
@@ -532,7 +534,7 @@
                     <Patch Id="KqTrTKYH8tuPbxFRLY5BZS" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="FcSQIVvkhnkNHkQJ3ukvNp" Name="Then" ManuallySortedPins="true" />
                     <Node Bounds="806,895,146,19" Id="Dengikp6skjL7G7bfqcIp1">
-                      <p:NodeReference LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+                      <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="ProcessAppFlag" Name="UngenericOscObjectReceiver" />
                       </p:NodeReference>
@@ -562,7 +564,7 @@
               </p:NodeReference>
               <Patch Id="NM3RZXbU4OROWyfwA2b3KG" ManuallySortedPins="true">
                 <Node Bounds="523,1490,105,26" Id="PI7gmjuhB21Oqpls2Ib6u0">
-                  <p:NodeReference LastCategoryFullName="Main.OscControllerBinding" LastDependency="OscControllerModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OscControllerBinding" LastDependency="VL.OscControllerModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OscControllerBinding" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
@@ -576,7 +578,7 @@
                   <Pin Id="LBP65Jwgyy9PLIdiMkpma4" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="573,1386,114,26" Id="FazBfl3C8zBMQMpId2VVDE">
-                  <p:NodeReference LastCategoryFullName="Main.OscControllerBindingModel" LastDependency="OscControllerModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OscControllerBindingModel" LastDependency="VL.OscControllerModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="OscControllerBindingModel" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -626,14 +628,14 @@
             </Node>
             <ControlPoint Id="JMccEybc8whN1qHZPBPbG3" Bounds="689,688" />
             <Node Bounds="519,601,67,19" Id="HY75SwwfUMIOZHlADjND65">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetOscHub" />
               </p:NodeReference>
               <Pin Id="BCcm6bOisCqLUFE78OzmnD" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="519,637,59,26" Id="O26dEVpsQ9vOuTjQLImzcA">
-              <p:NodeReference LastCategoryFullName="Main.OscHub" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OscHub" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="OscHub" />
                 <Choice Kind="OperationCallFlag" Name="Incoming" />
@@ -944,7 +946,7 @@
               <Pin Id="GBmeIg89MFMNfbqYywbAYT" Name="Result" Kind="OutputPin" />
               <ControlPoint Id="MlMp3Xyw1vSPGqzWQ86g05" Bounds="276,744" />
               <Node Bounds="274,692,52,26" Id="FdQfjRxeqaMQV3EtaHgjNx">
-                <p:NodeReference LastCategoryFullName="Main.OscHub" LastDependency="OscControllerModule.vl">
+                <p:NodeReference LastCategoryFullName="IO.OscHub" LastDependency="VL.OscControllerModule.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="OscHub" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -1531,7 +1533,7 @@
                     <Pin Id="SWUnqC0ZaXaPBmhfNE5bXE" Name="Input" Kind="InputPin" />
                     <ControlPoint Id="FMEkCF8FHPMMFRBnVBlpJY" Bounds="380,435" />
                     <Node Bounds="332,446,103,26" Id="TR44onIXi9RQTzBhCn733M">
-                      <p:NodeReference LastCategoryFullName="Main.SaveToModelPin" LastDependency="OscControllerModule.vl">
+                      <p:NodeReference LastCategoryFullName="IO.SaveToModelPin" LastDependency="VL.OscControllerModule.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="SaveToModelPin" NeedsToBeDirectParent="true" />
                         <Choice Kind="OperationCallFlag" Name="Write" />
@@ -1545,9 +1547,9 @@
             </Node>
             <ControlPoint Id="P6Pn0taJAUwPtZLxv3LnOi" Bounds="212,164" />
             <Node Bounds="672,338,69,19" Id="OpG31vYj7lYO4ZlmctuDFs">
-              <p:NodeReference LastCategoryFullName="Main" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="Category" Name="Main" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="Category" Name="IO" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="SetPinValue" />
               </p:NodeReference>
               <Pin Id="PYm9PdADTnCPeGAx8D0nRc" Name="Node Context" Kind="InputPin" />
@@ -1620,7 +1622,7 @@
               <Pin Id="Fcn1GI0pBuvMHLgVORwOl1" Name="Instance" Kind="OutputPin" />
             </Node>
             <Node Bounds="676,759,103,26" Id="LnQPELZPziPLx26hOsKtOl">
-              <p:NodeReference LastCategoryFullName="Main.SaveToModelPin" LastDependency="OscControllerModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.SaveToModelPin" LastDependency="VL.OscControllerModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="SaveToModelPin" />
                 <Choice Kind="OperationCallFlag" Name="Write" />
@@ -1764,7 +1766,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="UoAPjZfcqeoP9a5PDi5KAQ" Location="VL.IO.OSC" Version="1.0.19" />
-  <NugetDependency Id="F8CJ1l2h5D3PhdMDYPlszi" Location="VL.IO.Midi" Version="1.0.9" />
   <DocumentDependency Id="LD5QBnI9xztLnwx6bs63qi" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0001-gb649803a1e/packs/VL.IO.Midi/ModelUtils.vl" />
   <DocumentDependency Id="OKWysuOGME2MYeOLJ5EVEO" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0001-gb649803a1e/packs/VL.CoreLib/CoreLibBasics.vl" />
   <DocumentDependency Id="Hqcc9O9dx6VLRamlCmtMkb" Location="C:/Program Files/vvvv/vvvv_gamma_5.3-0001-gb649803a1e/packs/VL.CoreLib/System.Reflection.vl" />
