@@ -112,7 +112,7 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:TypeAnnotation>
             </Pad>
-            <Pad Id="NRWzaCjffkiQHFunSDmlQt" Comment="Port" Bounds="489,275,35,15" ShowValueBox="true" isIOBox="true" Value="5555">
+            <Pad Id="NRWzaCjffkiQHFunSDmlQt" Comment="Port" Bounds="489,275,35,15" ShowValueBox="true" isIOBox="true" Value="12000">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -413,12 +413,12 @@
             </p:NodeReference>
             <Pin Id="KXZhwpctJzVNdefEcR4gD7" Name="Model" Kind="InputPin">
               <p:DefaultValue>
-                <Item Address="/someValue" Binding_Type="Receive" Channel_Path="Noise" />
-                <Item Binding_Type="Receive" Channel_Path="Rockstar" Is_Primitive="True" />
                 <Item Address="/someText" Binding_Type="Receive" Channel_Path="Slogan" />
+                <Item Binding_Type="Receive" Channel_Path="Rockstar" Is_Primitive="True" />
+                <Item Address="/someValue" Binding_Type="Receive" Channel_Path="Noise" />
               </p:DefaultValue>
             </Pin>
-            <Pin Id="DETywOsUDHnMi38LtRV2FD" Name="Update" Kind="ApplyPin" />
+            <Pin Id="BqfzI31S4MhLJwXOiQQQgK" Name="Port" Kind="InputPin" />
           </Node>
           <Node Bounds="189,418,123,19" Id="ERu8iR3g8fNMzSBnqL5Ugy">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo Use the OSC Module.vl">
@@ -552,7 +552,7 @@
           <Pad Id="R9w7pFn4XlrMZsvqyjk1gO" Comment="Name" Bounds="267,1060,57,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="TMy65wr9WxFLqILOwtSnfa" Comment="Age" Bounds="287,1037,35,15" ShowValueBox="true" isIOBox="true" />
           <Overlay Id="Lsors8kqIuZP9IhX0W7bdp" Name="Custom type" Bounds="138,838,297,258" />
-          <Pad Id="GnmNbJZemo4OQzysNBhEUF" Bounds="167,196,338,19" ShowValueBox="true" isIOBox="true" Value="Place an OscControllerModule node in your patch">
+          <Pad Id="GnmNbJZemo4OQzysNBhEUF" Bounds="167,196,373,39" ShowValueBox="true" isIOBox="true" Value="Place an OscControllerModule node in your patch. You can specify the incoming port.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -606,6 +606,11 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="DsykWXSkaFJNoa4tZuqcSV" Comment="Port" Bounds="297,138,59,15" ShowValueBox="true" isIOBox="true" Value="12000">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="NWsbaoZj7kpQZU0RBmTZH5" Name="Create" ParticipatingElements="UVMb4WIycZYOU8eeK1maL4,LpaMgeGrlOMOj8iDLzpIbv" />
         <Patch Id="KGgO6NG5p6jODv6KioaRrh" Name="Update" />
@@ -624,6 +629,7 @@
         <Link Id="HXz13G9u6WkNd9yd0TBuJK" Ids="ArVk1GhRZP2LqirmpEMYiP,GOnVUYpCqv5LaspzdFos4k" />
         <Link Id="Apwcl5gNkpSPvK4QD6PMvm" Ids="Tw8crtlI5ZsMwBkFZ6Mbvq,R9w7pFn4XlrMZsvqyjk1gO" />
         <Link Id="GjZerm8U8qHOP9oxeaxZFM" Ids="FlCz0Ay18inMEjs7S0k1l9,TMy65wr9WxFLqILOwtSnfa" />
+        <Link Id="Bws4gPMJSJ9O4IUTd0E8Ek" Ids="DsykWXSkaFJNoa4tZuqcSV,BqfzI31S4MhLJwXOiQQQgK" />
       </Patch>
     </Node>
   </Patch>

@@ -1,1 +1,3 @@
+Noise: Float32
+Rockstar: Person
 Slogan: String
